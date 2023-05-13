@@ -58,21 +58,26 @@ const Main = () => {
                     placeholder="Search repository"
                 />
             </div>
-            <div className={cl.repositories_list}>
-                {repositories.map(repository =>
-                    <Repository
-                        key={repository.id}
-                        repository={repository}
-                    />
-                )}
-            </div>
-            <Paginator
-                pages={pages}
-                currentPage={currentPage}
-                changePage={changePage}
-                totalCount={totalCount}
-                perPage={perPage}
-            />
+            {repositories.length ?
+                <div className={cl.repositories_list}>
+                    {repositories.map(repository =>
+                        <Repository
+                            key={repository.id}
+                            repository={repository}
+                        />)
+                    }
+                </div>
+                : <div className={cl.empty}>Список пуст</div>
+            }
+            {repositories.length &&
+                <Paginator
+                    pages={pages}
+                    currentPage={currentPage}
+                    changePage={changePage}
+                    totalCount={totalCount}
+                    perPage={perPage}
+                />
+            }
         </div>
     );
 };
