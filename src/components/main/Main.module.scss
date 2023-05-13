@@ -1,0 +1,28 @@
+.main {
+  &_search {
+    margin-bottom: 20px;
+  }
+}
+
+.repositories_list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+@media (max-width: 700px) {
+  .repositories {
+    &_list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .repositories {
+    &_list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

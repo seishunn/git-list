@@ -1,0 +1,17 @@
+.lineInformation {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #7d8590;
+  align-items: center;
+  padding: 5px 0;
+
+  &_category {
+    font-weight: 400;
+  }
+
+  &_value {
+    padding: 3px 5px;
+    border-radius: 5px;
+    background: rgba(47, 129, 247, 0.5);
+  }
+}

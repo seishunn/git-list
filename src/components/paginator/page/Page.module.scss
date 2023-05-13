@@ -1,0 +1,28 @@
+.page {
+  padding: 0 3px;
+  min-width: 30px;
+  height: 30px;
+  background: #161B22;
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all .3s ease;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, .1);
+
+  &_active {
+    box-shadow: 0 0 5px 3px rgba(65, 105, 225, .3);
+    background: royalblue;
+  }
+
+  &:hover {
+    transform: scale(1.1, 1.1);
+    transition: all .3s ease;
+  }
+}
