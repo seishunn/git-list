@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
+import {HashRouter, Routes, Route, Navigate} from "react-router-dom";
 import Main from "./components/main/Main";
 import Card from "./components/card/Card";
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <div className="App">
                 <div className="container">
                     <Routes>
@@ -16,7 +16,7 @@ function App() {
                     </Routes>
                 </div>
             </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
